@@ -5,7 +5,17 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="4fae52c9edf64728a44cbffbab22f85a" Name="Diagram1">
-        <EntityTypeShape EntityType="ChatExampleModel.Chat" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChatExampleModel.Chat" Width="1.5" PointX="2.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChatExampleModel.C__MigrationHistory" Width="1.5" PointX="5.5" PointY="1.5" />
+        <EntityTypeShape EntityType="ChatExampleModel.AspNetRole" Width="1.5" PointX="1.375" PointY="5.75" />
+        <EntityTypeShape EntityType="ChatExampleModel.AspNetUserClaim" Width="1.5" PointX="2.875" PointY="8.25" />
+        <EntityTypeShape EntityType="ChatExampleModel.AspNetUserLogin" Width="1.5" PointX="2.875" PointY="11" />
+        <EntityTypeShape EntityType="ChatExampleModel.AspNetUser" Width="1.5" PointX="0.625" PointY="0.5" />
+        <EntityTypeShape EntityType="ChatExampleModel.sysdiagram" Width="1.5" PointX="3.5" PointY="4.5" />
+        <AssociationConnector Association="ChatExampleModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="ChatExampleModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="ChatExampleModel.FK_Chats_AspNetUsers" />
+        <AssociationConnector Association="ChatExampleModel.AspNetUserRoles" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
